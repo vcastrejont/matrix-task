@@ -1,0 +1,143 @@
+body {
+  background-color: #fff;
+}
+
+header .top-info {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  background-color: #363f48;
+  padding: 7px 0;
+  color: #fff;
+  font-weight: 100;
+}
+
+header .top-info .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .top-info .fa {
+  margin: 10px;
+}
+
+header .logo {
+  padding: 10px 0 0 0;
+}
+
+header .logo .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .logo img {
+  height: 60px;
+}
+
+header nav ul {
+  padding: 0;
+}
+
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+header nav ul li a {
+  padding: 20px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  display: block;
+  color: #363f48;
+}
+
+header nav ul li a:hover {
+  color: #f34b0a;
+  background-color: #f2f2f2;
+  text-decoration: none;
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #333;
+  padding: 0.275rem 0.75rem;
+  font-size: 14px;
+}
+
+.slider {
+  background-image: url(../img/slider.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  padding: 50px 0;
+  background-position: 0 -150px;
+}
+
+main {
+  background-color: #f5f5f5;
+}
+
+main .list {
+  padding: 40px 0 0 0;
+}
+
+main .list h2 {
+  position: relative;
+  color: #232527;
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+main .list h2:before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  bottom: 0px;
+  width: 55px;
+  height: 2px;
+  background-color: #f34b0a;
+}
+
+main .list .car-box {
+  background: white;
+  padding: 15px;
+  border: solid 1px #e4e3e3;
+  margin-bottom: 30px;
+  position: relative;
+  margin: 0px auto 30px;
+}
+
+main .list .car-box figure {
+  position: relative;
+}
+
+main .list .car-box figure span {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  color: #fff;
+  display: block;
+  bottom: 0;
+  text-align: center;
+}
+
+.footer {
+  background-color: #363f48;
+  padding: 10px 0;
+  color: #fff;
+  text-align: center;
+}
+/*# sourceMappingURL=app.css.map */
