@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Vehicle = () => {
   return (
@@ -28,50 +29,60 @@ const Vehicle = () => {
           late 2002, the third in late 2009, and the fourth and current
           iteration in 2017.
         </p>
-        <div class="details-panel-box">
-          <h4>
-            <strong>Key Features</strong> of Audi A8 3.0 TDI S12 Quattro
-            Tiptronic
-          </h4>
+        <div className="row">
+          <div className="col">
+            <h4>
+              <strong>Key Features</strong> of Audi A8 3.0 TDI S12 Quattro
+              Tiptronic
+            </h4>
 
-          <ul>
-            <li>
-              <span>Body</span>
-              <span>Convertible</span>
-            </li>
-            <li>
-              <span>Total Kilometres</span>
-              <span>2090Km’s</span>
-            </li>
-            <li>
-              <span>Fuel Type</span>
-              <span>Diesel</span>
-            </li>
-            <li>
-              <span>Reg.Year</span>
-              <span>2013, Aug</span>
-            </li>
-          </ul>
+            <ul>
+              <li>
+                <span>Body</span>
+                <span>Convertible</span>
+              </li>
+              <li>
+                <span>Total Kilometres</span>
+                <span>2090Km’s</span>
+              </li>
+              <li>
+                <span>Fuel Type</span>
+                <span>Diesel</span>
+              </li>
+              <li>
+                <span>Reg.Year</span>
+                <span>2013, Aug</span>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <span>Transmission</span>
+                <span>Semi Automatic</span>
+              </li>
+              <li>
+                <span>Engine</span>
+                <span>3.7L V-L cyl</span>
+              </li>
+              <li>
+                <span>Fuel Economy</span>
+                <span>14.55 kmpl</span>
+              </li>
+              <li>
+                <span>Color</span>
+                <span>TitaniumMetalic</span>
+              </li>
+            </ul>
+          </div>
+          <div className="col">
+            <div className="largebtn">
+              <Link to="/schedule" className="btn btn-secondary">
+                <i className="fa fa-calendar" aria-hidden="true"></i> Schedule a
+                sales appointment
+              </Link>
+            </div>
+          </div>
         </div>
-
-        <ul>
-          <li>
-            <span>Transmission</span>
-            <span>Semi Automatic</span>
-          </li>
-          <li>
-            <span>Engine</span>
-            <span>3.7L V-L cyl</span>
-          </li>
-          <li>
-            <span>Fuel Economy</span>
-            <span>14.55 kmpl</span>
-          </li>
-          <li>
-            <span>Color</span>
-            <span>TitaniumMetalic</span>
-          </li>
-        </ul>
       </div>
     </main>
   )
