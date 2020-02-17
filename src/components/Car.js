@@ -33,7 +33,7 @@ const Car = ({ model, year, maker, price, id }) => {
         </p>
         <div className="text-right">
           <Link to="/schedule" className="btn btn-secondary">
-            Schedule a tour
+            Schedule
           </Link>
         </div>
       </div>

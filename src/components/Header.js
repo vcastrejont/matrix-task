@@ -13,7 +13,9 @@ function Header() {
                 vcastrejont@gmail.com
               </div>
               <div className=" col-md-2 action">
-                <div className="btn btn-white">Returning clients</div>
+                <Link to="/returning" className="btn btn-white">
+                  Returning clients
+                </Link>
               </div>
             </div>
           </div>

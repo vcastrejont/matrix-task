@@ -11,13 +11,20 @@ const Schedule = () => {
     })
   }
 
+  const rand = (min, max) => {
+    return Math.floor(Math.random() * (max - min) + min)
+  }
+
   const onSubmitHandler = e => {
     e.preventDefault()
     axios
       .post('https://5e49d1f56eafb7001488be3a.mockapi.io/v1/appointments', form)
       .then(result => {
-        setConfirm(result.data.createdAt)
+        setConfirm(`${rand(100, 900)}${result.data.id}`)
         console.log(result.data.createdAt)
+      })
+      .catch(err => {
+        console.error(err)
       })
   }
 
