@@ -1,18 +1,41 @@
-import React from 'react'
-import Header from './components/Header'
-import Slider from './components/Slider'
-import Main from './components/Main'
-import Footer from './components/Footer'
+import React from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Schedule from "./pages/Schedule";
+import Vehicle from "./pages/Vehicle";
+import Returning from "./pages/Returning";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams
+} from "react-router-dom";
 
 function App() {
   return (
-    <>
+    <Router>
       <Header></Header>
-      <Slider></Slider>
-      <Main></Main>
+      <Switch>
+        <Route path="/schedule">
+          <Schedule />
+        </Route>
+        <Route path="/vehicle">
+          <Vehicle />
+        </Route>
+        <Route path="/returning">
+          <Returning />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+
       <Footer />
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;

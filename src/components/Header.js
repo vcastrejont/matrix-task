@@ -1,29 +1,33 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 function Header() {
   return (
     <>
       <header>
         <div className="top-info">
           <div className="container">
-            <div className="text">
-              <i className="fa fa-phone" aria-hidden="true"></i> (623)242-2382
-              <i className="fa fa-envelope-o" aria-hidden="true"></i>
-              vcastrejont@gmail.com
-            </div>
-            <div className="action">
-              <div className="btn btn-white">Returning clients</div>
+            <div className="row">
+              <div className="col-md-10 text sr-only">
+                <i className="fa fa-phone" aria-hidden="true"></i> (623)242-2382
+                <i className="fa fa-envelope-o" aria-hidden="true"></i>
+                vcastrejont@gmail.com
+              </div>
+              <div className=" col-md-2 action">
+                <div className="btn btn-white">Returning clients</div>
+              </div>
             </div>
           </div>
         </div>
-        <div className="logo">
-          <div className="container">
-            <img src="img/logo.svg" alt="Matrix" />
-            <nav>
-              <div className="container">
+        <div className="logo container">
+          <div className="row">
+            <div class="col-md-4">
+              <img src="img/logo.svg" alt="Matrix" />
+            </div>
+            <div class="col-md-8">
+              <nav>
                 <ul>
                   <li>
-                    <a href="#">Home</a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li>
                     <a href="#">about</a>
@@ -32,8 +36,8 @@ function Header() {
                     <a href="#">contact</a>
                   </li>
                 </ul>
-              </div>
-            </nav>
+              </nav>
+            </div>
           </div>
         </div>
       </header>

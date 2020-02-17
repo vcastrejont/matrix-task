@@ -1,27 +1,43 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Car = () => {
+const Car = ({ model, year, maker, price, id }) => {
+  const priceFormat = price => {
+    return price.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,");
+  };
   return (
-    <article className="col">
-      <div className="car-box">
-        <figure>
-          <img src="img/recent-car-1.jpg" className="img-fluid" alt="Car" />
-          <span>2005 Model</span>
-        </figure>
+    <div className="car-box">
+      <figure>
+        <Link to="/vehicle">
+          <img
+            src={`img/recent-car-${id}.jpg`}
+            className="img-fluid"
+            alt={model}
+          />
+          <span>
+            {model} {year}
+          </span>
+        </Link>
+      </figure>
 
-        <div className="car-content">
-          <h6>Ford Shelby GT350</h6>
-          <span className="price">$45,000</span>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-          <a href="#" className="btn btn-secondary push-right">
+      <div className="car-content">
+        <h4>
+          {maker}
+          {` `}
+          {model}
+        </h4>
+        <span className="price">${priceFormat(price)}</span>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+        <div className="text-right">
+          <Link to="/schedule" className="btn btn-secondary">
             Schedule a tour
-          </a>
+          </Link>
         </div>
       </div>
-    </article>
+    </div>
   );
 };
 

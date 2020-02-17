@@ -14,10 +14,7 @@ header {
     padding: 7px 0;
     color: $color-white;
     font-weight: 100;
-    .container {
-      display: flex;
-      justify-content: space-between;
-    }
+
     .fa {
       margin: 10px;
     }
@@ -34,6 +31,7 @@ header {
   }
 
   nav {
+    text-align: right;
     ul {
       padding: 0;
       li {
@@ -71,12 +69,12 @@ header {
   color: white;
   font-family: "Raleway", sans-serif;
   padding: 50px 0;
-  background-position: 0 -150px;
 }
 main {
   background-color: $color-background;
+  min-height: 75vh;
+  padding: 40px 0;
   .list {
-    padding: 40px 0 0 0;
     h2 {
       position: relative;
       color: #232527;
@@ -122,4 +120,19 @@ main {
   padding: 10px 0;
   color: $color-white;
   text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+.full {
+  background-color: $color-white;
+  border-bottom: 5px solid #f34b0a;
+  margin-bottom: 20px;
+}
+
+.form {
+  background-color: $color-white;
+  padding: 20px;
+  margin: 40px;
 }
