@@ -5,14 +5,8 @@ import Home from "./pages/Home";
 import Schedule from "./pages/Schedule";
 import Vehicle from "./pages/Vehicle";
 import Returning from "./pages/Returning";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams
-} from "react-router-dom";
+import About from "./pages/About";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -27,6 +21,9 @@ function App() {
         </Route>
         <Route path="/returning">
           <Returning />
+        </Route>
+        <Route path="/about">
+          <About />
         </Route>
         <Route path="/">
           <Home />

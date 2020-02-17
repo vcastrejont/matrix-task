@@ -9,7 +9,7 @@ const Vehicle = () => {
       <div className="full">
         <div className="container">
           <figure>
-            <img src={`img/full.jpg`} className="img-fluid" alt="Full image" />
+            <img src={`img/full.jpg`} className="img-fluid" alt="Full " />
           </figure>
         </div>
       </div>

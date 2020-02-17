@@ -7,7 +7,7 @@ function Header() {
         <div className="top-info">
           <div className="container">
             <div className="row">
-              <div className="col-md-10 text sr-only">
+              <div className="col-md-10 text ">
                 <i className="fa fa-phone" aria-hidden="true"></i> (623)242-2382
                 <i className="fa fa-envelope-o" aria-hidden="true"></i>
                 vcastrejont@gmail.com
@@ -20,20 +20,22 @@ function Header() {
         </div>
         <div className="logo container">
           <div className="row">
-            <div class="col-md-4">
-              <img src="img/logo.svg" alt="Matrix" />
+            <div className="col-md-4">
+              <Link to="/">
+                <img src="img/logo.svg" alt="Matrix" />
+              </Link>
             </div>
-            <div class="col-md-8">
+            <div className="col-md-8">
               <nav>
                 <ul>
                   <li>
                     <Link to="/">Home</Link>
                   </li>
                   <li>
-                    <a href="#">about</a>
+                    <a href="/about">about</a>
                   </li>
                   <li>
-                    <a href="#">contact</a>
+                    <a href="/contact">contact</a>
                   </li>
                 </ul>
               </nav>
